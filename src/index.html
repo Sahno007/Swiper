@@ -1,46 +1,46 @@
 <!DOCTYPE html>
 <html lang="eu">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Travel X - Swiper Header</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
-  </head>
-  <body>
-    <!--Loader-->
-    <include src="./html/loader.html"></include>
 
-    <header class="header">
-      <!--Mobile nav-->
-      <include src="./html/mobile/mobile-nav.html"></include>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Swiper</title>
+  <link rel="stylesheet" href="./sass/index.scss" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
 
-      <!--Header content-->
-      <div class="header__content">
-        <div class="header__nav">
-          <include src="./html/header/nav.html" />
-        </div>
-        <div class="header__socials">
-          <include src="./html/header/socials.html" />
-        </div>
-        <div class="header__see-more">
-          <a href="#!" class="link see-more">SEE MORE</a>
-        </div>
-        <div class="header__slider-btn">
-          <include src="./html/header/slider-control.html" />
-        </div>
-        <div class="header__scrollbar">
-          <div class="swiper-scrollbar"></div>
-        </div>
+<body>
+  <!--Loader-->
+  <include src="./html/loader.html"></include>
+
+  <header class="header">
+    <!--Mobile nav-->
+    <include src="./html/mobile/mobile-nav.html"></include>
+
+    <!--Header content-->
+    <div class="header__content">
+      <div class="header__nav">
+        <include src="./html/header/nav.html" />
       </div>
+      <div class="header__socials">
+        <include src="./html/header/socials.html" />
+      </div>
+      <div class="header__see-more">
+        <a href="#!" class="link see-more">SEE MORE</a>
+      </div>
+      <div class="header__slider-btn">
+        <include src="./html/header/slider-control.html" />
+      </div>
+      <div class="header__scrollbar">
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </div>
 
-      <!--Swiper-->
-      <include src="./html/swiper.html"></include>
-    </header>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script type="module" src="./index.js"></script>
-  </body>
+    <!--Swiper-->
+    <include src="./html/swiper.html"></include>
+  </header>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script type="module" src="./index.js"></script>
+</body>
+
 </html>
