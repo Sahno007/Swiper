@@ -1,0 +1,92 @@
+.header {
+  height: 100vh;
+  position: relative;
+  background-color: $bg-header;
+  color: $white;
+
+  a {
+    color: $white;
+  }
+}
+
+.header__content {
+  position: absolute;
+  z-index: 10;
+
+  top: 40px;
+  left: 5%;
+  right: 5%;
+  bottom: 30px;
+
+  pointer-events: none;
+
+  @media screen and (min-width: $tablet) {
+    top: 40px;
+    left: 40px;
+    right: 40px;
+    bottom: 60px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    top: 50px;
+    bottom: 80px;
+    left: 70px;
+    right: 70px;
+  }
+}
+
+.header__nav {
+  pointer-events: all;
+}
+
+.header__socials {
+  display: none;
+  pointer-events: all;
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0%, -50%);
+  }
+}
+
+.header__see-more {
+  pointer-events: all;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.header__slider-btn {
+  pointer-events: all;
+
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  pointer-events: all;
+}
+
+.header__scrollbar {
+  pointer-events: all;
+  position: absolute;
+
+  left: 0;
+  bottom: -15px;
+  width: 100%;
+
+  @media screen and (min-width: $tablet) and (min-height: 650px) {
+    left: unset;
+    bottom: unset;
+    right: 0;
+    top: 45%;
+
+    width: 400px;
+    height: 10px;
+
+    transform: rotate(90deg) translate(50%, 0%);
+    transform-origin: right top;
+  }
+}
