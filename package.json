@@ -1,8 +1,8 @@
 {
-  "name": "Header-swiper",
+  "name": "Swiper",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://DimaSavchuk.github.io/Header-swiper",
+  "homepage": "https://sahno007.github.io/Swiper/",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /Header-swiper/"
